@@ -70,11 +70,11 @@ function changeColor() {
     let section = document.querySelector("#sectionOne");
     let value = inputTwo.value;
     if (isColor(value)) {
+        alert("Cor sendo implementada no texto 🔥");
         section.style.color = inputTwo.value; sectionTextColor
         localStorage.removeItem("sectionTextColor");
         localStorage.setItem("sectionTextColor", value);
         inputTwo.value = "";
-        alert("Cor sendo implementada no texto 🔥");
     }
     else {
         inputTwo.value = "";
